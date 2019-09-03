@@ -1,3 +1,4 @@
+#standard fibonacci sequence
 def fibonacci(n)
   if n==0
     0
@@ -11,6 +12,7 @@ end
 n = 35
 puts fibonacci(n)
 
+#recursive fibonacci solution
 def recursive_fib(n)
   num = [0, 1]
 
@@ -28,6 +30,7 @@ end
 
 puts recursive_fib(35)
 
+#iterative fibonacci solution
 def iterative_fib(n)
 
   a = 0
@@ -45,6 +48,7 @@ end
 
 puts iterative_fib(35)
 
+#benchmarks
 require 'benchmark'
 num = 35
 Benchmark.bm do |x|
